@@ -122,10 +122,11 @@ body {
 }
 
 .servico img {
-  max-width: 60px;
+  width: 200px; /* ou tente 120px, 150px, etc., conforme desejar */
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
+
 
 .servico h3 {
   font-size: 1.2rem;
