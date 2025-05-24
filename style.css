@@ -115,18 +115,20 @@ body {
 }
 
 .servico {
-  background: #42a1e0;
+  border: 2px solid #42a1e0; /* Contorno em azul */
   padding: 1.5rem;
   border-radius: 10px;
   text-align: center;
+  background-color: white; /* ou #fff, para fundo branco */
 }
 
 .servico img {
-  width: 200px;
-  height: auto;
-  margin-bottom: 10px;
+  width: 100%;            /* Ocupa toda a largura do card */
+  height: 300px;          /* Altura fixa para manter todos os cards uniformes */
+  object-fit: cover;      /* Mantém proporção e corta se necessário */
+  border-radius: 8px;     /* Bordas arredondadas (opcional) */
+  margin-bottom: 3rem;
 }
-
 .servico h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
