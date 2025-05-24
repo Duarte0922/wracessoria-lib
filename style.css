@@ -1,0 +1,267 @@
+/* Geral */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFFFF;
+  color: #1A202C;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4682B4;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Banner */
+.banner {
+  background-color: #ADD8E6;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-banner img {
+  max-width: 150px; /* Reduzindo o tamanho da logo */
+}
+
+.text-banner h1,
+.text-banner p {
+  color: white;
+}
+
+.text-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-banner p {
+  font-size: 1.2rem;
+}
+
+/* Sobre */
+.sobre {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 200px;
+}
+
+/* CTA */
+.cta {
+  background-color: #ADD8E6;
+  color: #1A202C;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.btn {
+  background-color: #4682B4;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Seção de Serviços */
+.servicos {
+  padding: 3rem 2rem;
+}
+
+.servicos h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.servicos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.servico {
+  background: #acd8f5;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.servico img {
+  max-width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.servico h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.servico p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Seção de Blog */
+.blog {
+  padding: 3rem 2rem;
+}
+
+.blog h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.post {
+  flex: 1 1 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.post h3 {
+  font-size: 1.1rem;
+  margin: 1rem 0.75rem 0.5rem;
+}
+
+.post p {
+  font-size: 0.9rem;
+  padding: 0 0.75rem 1rem;
+  color: #666;
+}
+
+.btn-blog {
+  display: block;
+  margin: 2rem auto 0;
+  background-color: #4682B4;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Formulário de Newsletter */
+.newsletter {
+  background-color: #1A202C;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  font-size: 1rem;
+}
+
+.newsletter button {
+  padding: 0.8rem 1.5rem;
+  background-color: #4682B4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #1A202C;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.redes-sociais a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+/* Botão WhatsApp Flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
