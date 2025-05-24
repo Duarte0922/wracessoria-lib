@@ -205,27 +205,11 @@
       <img src="assets/simples.png" alt="Simples Nacional">
       <h3>Simples Nacional</h3>
       <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/aplicacoes.aspx?id=22" target="_blank">Acessar site</a>
+    </div>
 
-  <div class="post">
-    <h3>Emita aqui:</h3>
-    <ul class="link-list">
-      <li><a href="https://certidoes.sit.trabalho.gov.br/pcdreab " target="_blank">Certidão de Regularidade na Contratação de Pessoas com Deficiência e Reabilitados da Previdência Social</a></li>
-      <li><a href="https://certidoes.sit.trabalho.gov.br/ " target="_blank">Certidão de Regularidade na Contratação de Aprendizes</a></li>
-      <li><a href="https://cndt-certidao.tst.jus.br/inicio.faces " target="_blank">Certidão Negativa de Débitos Trabalhistas – CNDT</a></li>
-      <li><a href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf " target="_blank">Certificado de Regularidade do FGTS - CRF</a></li>
-      <li><a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidointernet/PJ/ " target="_blank">Certidão de Débitos Relativos a Créditos Tributários Federais e à Dívida Ativa da União</a></li>
-      <li><a href="https://servicos.pf.gov.br/epol-sinic-publico/ " target="_blank">Emitir Certidão de Antecedentes Criminais</a></li>
-      <li><a href="https://www.gov.br/pf/pt-br/assuntos/imigracao/declaracoes-e-formularios/certificadoscriminais " target="_blank">As certidões criminais disponíveis no Brasil...</a></li>
-      <li><a href="https://certidoes.cgu.gov.br/ " target="_blank">Serviço automatizado para emitir ou validar certidões negativas...</a></li>
-      <li><a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp " target="_blank">Emissão de Comprovante de Inscrição e de Situação Cadastral</a></li>
-      <li><a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublica.asp " target="_blank">Comprovante de Situação Cadastral no CPF</a></li>
-      <li><a href="https://processo.stj.jus.br/processo/certidao/ " target="_blank">Certidão de quitação eleitoral</a></li>
-      <li><a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidointernet/PJ/EmitirPGFN " target="_blank">Certidão de Débitos Relativos a Créditos Tributários Federais e à Dívida Ativa da União</a></li>
-      <li><a href="https://mei.receita.economia.gov.br/certificado/ " target="_blank">Sistema de consulta de comprovante de MEI</a></li>
-      <li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/programa-de-alimentacao-do-trabalhador-pat " target="_blank">Cadastro PAT – Programa de assistência ao trabalhador</a></li>
-    </ul>
   </div>
-  </section>
+</section>
+
 
   <!-- Formulário de Newsletter -->
   <section class="newsletter">
