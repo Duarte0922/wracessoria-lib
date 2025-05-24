@@ -9,17 +9,18 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="navbar">
-    <nav class="menu">
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#treinamentos">Treinamentos</a>
-      <a href="#blog">Blog</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+<!-- Header -->
+<header class="navbar">
+  <nav class="menu">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#treinamentos">Treinamentos</a>
+    <a href="#blog">Blog</a>
+    <a href="#guias">Emitir Guias</a> <!-- Corrigido aqui -->
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 
   <!-- Banner -->
   <section class="banner">
@@ -32,18 +33,34 @@
     </div>
   </section>
 
-<!-- Sobre -->
-<section id="sobre" class="sobre">
-  <h2>Sobre a WR Assessoria</h2>
-  <p>Conheça mais sobre a WR Assessoria em <a href="https://olink.ai/wrassessorias" target="_blank">nosso link oficial</a>.</p>
-
-  <div class="cards">
-    <div class="card">
-      <img src="icone-capacitacao.png" alt=""> Capacitação
-    </div>
+<!-- Seção Sobre no estilo do Blog -->
+<section style="
+  background-image: url('assets/escritorio.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  padding: 100px 20px; 
+  text-align: center; 
+  color: white;
+">
+  <div style="background-color: rgba(40, 84, 141, 0.7); display: inline-block; padding: 40px; border-radius: 12px;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Sobre a WR Assessoria</h2>
+    <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+      Conheça mais sobre a WR Assessoria e descubra como podemos ajudar sua empresa a crescer.
+    </p>
+    <a href="https://olink.ai/wrassessorias" target="_blank" style="
+      background-color: #00ced1; 
+      color: #fff; 
+      padding: 12px 24px; 
+      text-decoration: none; 
+      font-weight: bold; 
+      border-radius: 6px;
+    ">
+      Acessar Perfil
+    </a>
   </div>
 </section>
 
+  
 
   <!-- CTA Fundos Laranja -->
   <section class="cta">
@@ -61,48 +78,133 @@
         <p>Acompanhamento completo para sua empresa.</p>
       </div>
       <div class="servico">
-        <img src="icone-treinamento.png" alt="Treinamentos Personalizados">
+        <img src="assets/post1.jpg" alt="Treinamentos Personalizados">
         <h3>Treinamentos Personalizados</h3>
         <p>Desenvolvemos treinamentos sob medida.</p>
       </div>
       <div class="servico">
-        <img src="icone-consultoria.png" alt="Consultoria de RH">
-        <h3>Consultoria de RH</h3>
+        <img src="assets/post2.jpg" alt="Consultoria de RH">
+        <h3>Tercerização do Departamento Pessoal</h3>
         <p>Implantação de políticas e processos.</p>
       </div>
       <div class="servico">
-        <img src="icone-seguranca-trabalho.png" alt="Segurança no Trabalho">
+        <img src="assets/post3.jpg" alt="Segurança no Trabalho">
         <h3>Segurança no Trabalho</h3>
         <p>Gestão de riscos e compliance.</p>
       </div>
     </div>
   </section>
-
-  <!-- Seção de Blog -->
-  <section id="blog" class="blog">
-    <h2>Nosso Blog</h2>
-    <div class="posts">
-      <div class="post">
-        <img src="assets/post1.jpg" alt="Post 1">
-        <h3>Soluções Personalizadas para o Sucesso</h3>
-        <p>Soluções Personalizadas para o Sucesso
-Transformamos desafios em oportunidades com consultoria e treinamentos sob medida, ajudando sua empresa a alcançar resultados extraordinários.</p>
-      </div>
-      <div class="post">
-        <img src="assets/post2.jpg" alt="Post 2">
-        <h3>Capacitações Sob Medida para o Sucesso da Sua Equipe</h3>
-        <p>Capacitações Sob Medida para o Sucesso da Sua Equipe
-Na WR Assessoria e Treinamento, nossa missão é transformar empresas com soluções práticas e personalizadas. Valorizamos inovação, excelência e compromisso, construindo histórias de sucesso ao lado de nossos clientes.</p>
-      </div>
-      <div class="post">
-        <img src="assets/post3.jpg" alt="Post 3">
-        <h3>Título do Post 3</h3>
-        <p>Soluções Estratégicas para Impulsionar sua Empresa
-Descubra como nossos serviços podem transformar sua empresa, promovendo eficiência e crescimento sustentável.</p>
-      </div>
+<section id="blog" style="display: flex; gap: 20px; padding: 40px; justify-content: center;">
+  <div style="flex: 1; min-width: 300px; background-image: url('assets/escritorio.jpg'); background-size: cover; background-position: center; border-radius: 12px; color: white; display: flex; align-items: center; justify-content: center; padding: 40px;">
+    <div style="background-color: rgba(40, 84, 141, 0.7); padding: 30px; border-radius: 12px; text-align: center;">
+      <h2 style="font-size: 2rem; margin-bottom: 1rem;">Venha conhecer nosso blog</h2>
+      <p style="font-size: 1rem; margin-bottom: 1.5rem;">
+        Acesse nossos artigos, dicas e novidades atualizadas.
+      </p>
+      <a href="https://wrassessorias.com.br/" target="_blank" style="
+        background-color: #00ced1; 
+        color: #fff; 
+        padding: 10px 20px; 
+        text-decoration: none; 
+        font-weight: bold; 
+        border-radius: 6px;
+      ">
+        Acessar o Blog
+      </a>
     </div>
-    <button class="btn-blog">Ver mais</button>
-  </section>
+  </div>
+</section>
+
+
+<!-- Seção de Guias -->
+<section id="guias" class="blog">
+  <h2>Guias para Emitir</h2>
+  <p style="text-align: center; margin-bottom: 2rem;">
+    Acesse para emitir sua Guia:
+  </p>
+  <div class="posts">
+
+    <div class="post">
+      <img src="assets/esocialfgts.png" alt="Guia 1">
+      <h3>Guia GFD – FGTS DIGITAL</h3>
+      <a href="https://fgtsdigital.sistema.gov.br/portal/login" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/cnpj.png" alt="CNPJ">
+      <h3>CNPJ</h3>
+      <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_Solicitacao.asp" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/conectividade.png" alt="Conectividade Social">
+      <h3>Conectividade Social</h3>
+      <a href="https://www.caixa.gov.br/empresa/conectividade-social/Paginas/default.aspx" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/det.png" alt="DET">
+      <h3>DET</h3>
+      <a href="https://det.sit.trabalho.gov.br/login?r=%2Fservicos" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/domesticoesocial.png" alt="Doméstico eSocial">
+      <h3>Doméstico eSocial</h3>
+      <a href="https://sso.acesso.gov.br/login?client_id=login.esocial.gov.br&authorization_id=196fd8cc259" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/ecac.png" alt="e-CAC">
+      <h3>e-CAC</h3>
+      <a href="https://cav.receita.fazenda.gov.br/autenticacao/login" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/empregabrasil.png" alt="Emprega Brasil">
+      <h3>Emprega Brasil</h3>
+      <a href="https://servicos.mte.gov.br/empregador/#/login" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/empregadorweb.png" alt="Empregador Web">
+      <h3>Empregador Web</h3>
+      <a href="https://sd.maisemprego.mte.gov.br/sdweb/empregadorweb/index.jsf" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/esocial.png" alt="eSocial">
+      <h3>eSocial</h3>
+      <a href="https://www.gov.br/esocial/pt-br" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/esocialfgts.png" alt="eSocial FGTS">
+      <h3>eSocial FGTS</h3>
+      <a href="https://fgtsdigital.sistema.gov.br/portal/login" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/fap.png" alt="FAP">
+      <h3>FAP</h3>
+      <a href="https://seconci-mg.org.br/wp-content/uploads/2022/10/FAP.jpg" target="_blank">Acessar imagem</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/sal.png" alt="SAL">
+      <h3>SAL</h3>
+      <a href="https://sal.rfp.gov.br/PortalSalInternet/faces/pages/index.xhtml" target="_blank">Acessar site</a>
+    </div>
+
+    <div class="post">
+      <img src="assets/simples.png" alt="Simples Nacional">
+      <h3>Simples Nacional</h3>
+      <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/aplicacoes.aspx?id=22" target="_blank">Acessar site</a>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Formulário de Newsletter -->
   <section class="newsletter">
