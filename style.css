@@ -35,67 +35,68 @@ body {
 
 .menu {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 /* Banner */
 .banner {
   background-color: #5DADE2;
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  text-align: center;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .logo-banner img {
-  max-width: 230px;
-}
-
-.text-banner h1,
-.text-banner p {
-  color: white;
+  max-width: 180px;
 }
 
 .text-banner h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 .text-banner p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* Sobre */
 .sobre {
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .card {
   background: #f0f0f0;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 10px;
-  width: 200px;
+  width: 180px;
+  margin: 0 auto;
 }
 
 /* CTA */
@@ -103,38 +104,42 @@ body {
   background-color: #5DADE2;
   color: #fafafa;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
 }
 
 .btn {
   background-color: #4682B4;
   color: white;
   border: none;
-  padding: 0.8rem 1.5rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
+  width: 100%;
+  max-width: 250px;
+  font-size: 1rem;
 }
 
 /* Seção de Serviços */
 .servicos {
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
 }
 
 .servicos h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .servicos-lista {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
 }
 
 .servico {
-  border: 2px solid #42a1e0; /* Contorno em azul */
-  padding: 1.5rem;
+  border: 2px solid #42a1e0;
+  padding: 1.2rem;
   border-radius: 10px;
   text-align: center;
   background-color: white;
@@ -142,35 +147,36 @@ body {
 
 .servico img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
 .servico h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
 .servico p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #555;
 }
 
-/* Seção de Blog */
+/* Seção de Blog / Guias */
 .blog {
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
 }
 
 .blog h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
 .posts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   padding: 0;
   margin: 0;
@@ -196,7 +202,7 @@ body {
 }
 
 .post h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -213,23 +219,23 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  padding: 1.5rem;
+  padding: 1.2rem;
 }
 
 .vertical-links h3 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 /* Lista de Links Verticais */
 .link-list {
   list-style: none;
   padding-left: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .link-list li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .link-list a {
@@ -246,42 +252,34 @@ body {
 .newsletter {
   background-color: #1A202C;
   color: white;
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
 .newsletter h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .newsletter form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .newsletter input[type="email"] {
-  padding: 0.8rem;
-  border: none;
+  width: 90%;
+  max-width: 300px;
+  padding: 0.7rem;
   border-radius: 10px;
-  width: 100%;
-  max-width: 350px;
   font-size: 1rem;
 }
 
 .newsletter button {
-  padding: 0.8rem 1.5rem;
-  background-color: #4682B4;
-  color: white;
-  border: none;
-  border-radius: 25px;
+  padding: 0.7rem 1.2rem;
   font-size: 1rem;
-  cursor: pointer;
+  border-radius: 25px;
 }
 
 /* Rodapé */
@@ -289,29 +287,31 @@ body {
   background-color: #1A202C;
   color: white;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.2rem 1rem;
   margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
 .redes-sociais a img {
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
+  width: 28px;
+  height: 28px;
+  margin: 0 4px;
 }
 
 /* Botão WhatsApp Flutuante */
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   background-color: #25D366;
   color: white;
-  padding: 1rem 1.5rem;
+  padding: 0.9rem 1.2rem;
   border-radius: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 /* Redimensionar imagens na seção de Guias */
@@ -320,22 +320,4 @@ body {
   height: auto;
   margin: 1rem auto 0;
   display: block;
-}
-
-/* Responsividade */
-@media (min-width: 768px) {
-  .vertical-links {
-    grid-row: span 2;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .link-list {
-    text-align: left;
-    padding-left: 0;
-  }
-
-  .link-list li {
-    margin-bottom: 0.5rem;
-  }
 }
