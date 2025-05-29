@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WR Assessoria - Galeria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    /* Fontes e estilo base */
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .gallery-item h3 {
+    display: none;
+    }
+    /* Estilo base para a galeria */
+    .gallery-section {
+        padding: 60px 20px;
+        background-color: #f9f9f9;
+    }
+
+    .gallery-section h2 {
+        text-align: center;
+        font-size: 2.2rem;
+        color: #28548d;
+        margin-bottom: 30px;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .gallery-item {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .gallery-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+
+    .gallery-item img.horizontal {
+        height: 200px;
+        width: auto;
+    }
+
+    .gallery-item img.vertical {
+        height: 300px;
+        width: auto;
+    }
+
+    .gallery-item h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #28548d;
+    }
+
+    .gallery-item p {
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .gallery-item a {
+        display: inline-block;
+        background-color: #00ced1;
+        color: #fff;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    /* Para imagens verticais */
+    .gallery-item img.vertical {
+        height: 300px; /* Altura fixa para imagens verticais */
+        width: auto;
+    }
+
+    /* Para imagens horizontais */
+    .gallery-item img.horizontal {
+        height: 200px; /* Altura fixa para imagens horizontais */
+        width: auto;
+    }
+        /* Rolagem suave para todos os links internos */
+    html {
+      scroll-behavior: smooth;
+    }
+    </style>
+<body>
+<header class="navbar">
+    <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#formados">Formados</a>
+    </nav>
+</header>
+<section class="gallery-page-intro" style="
+    background-image: url('imagens/escritorio.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+">
+    <div style="background-color: rgba(40, 84, 141, 0.7); display: inline-block; padding: 30px; border-radius: 12px;">
+        <h1 style="font-size: 2.8rem; margin-bottom: 1rem;">Nossa Galeria</h1>
+        <p style="font-size: 1.3rem;">Explore noscursos, eventos e momentos especiais.</p>
+    </div>
+</section>
+<!-- Seção Cursos -->
+<section id="cursos" class="gallery-section">
+  <h2>Cursos</h2>
+  <div class="gallery-container">
+
+    <!-- Lista de imagens da pasta cursos -->
+    <div class="gallery-item">
+      <img src="cursos/14.jpg" alt="Curso 1">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/15.jpg" alt="Curso 3">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/16.jpg" alt="Curso 4">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/17.jpg" alt="Curso 5">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/18.jpg" alt="Curso 6">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/19.jpg" alt="Curso 7">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/20.jpg" alt="Curso 8">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/45.jpeg" alt="Curso 9">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/50.jpg" alt="Curso 10">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/83.jpg" alt="Curso 11">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/87.jpg" alt="Curso 12">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/88.jpg" alt="Curso 14">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/89.jpg" alt="Curso 15">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/132.jpg" alt="Curso 132">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/133.jpg" alt="Curso 133">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/6.jpg" alt="Curso 18">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/7.jpg" alt="Curso 19">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/8.jpg" alt="Curso 20">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/9.jpg" alt="Curso 36">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/45.jpeg" alt="Curso 45">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/10.jpg" alt="Curso 46">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/11.jpg" alt="Curso 47">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/12.jpg" alt="Curso 48">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/36.jpeg" alt="Curso 49">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/46.jpg" alt="Curso 50">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/47.jpg" alt="Curso 51">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/48.jpg" alt="Curso 53">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/49.jpg" alt="Curso 62">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/51.jpg" alt="Curso 64">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/53.jpg" alt="Curso 65">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/62.jpg" alt="Curso 66">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/64.jpg" alt="Curso 78">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/65.jpg" alt="Curso 82">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/66.jpg" alt="Curso 83">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/78.jpg" alt="Curso 84">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/82.jpg" alt="Curso 86">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/84.jpg" alt="Curso 87">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/86.jpg" alt="Curso 88">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/90.jpg" alt="Curso 89">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/91.jpg" alt="Curso 90">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/93.jpg" alt="Curso 91">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/94.jpg" alt="Curso 93">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/95.jpg" alt="Curso 94">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/97.jpg" alt="Curso 95">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/101.jpg" alt="Curso 97">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/102.jpg" alt="Curso 101">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/105.jpg" alt="Curso 102">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/114.jpg" alt="Curso 105">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/115.jpg" alt="Curso 114">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/116.jpg" alt="Curso 115">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/117.jpg" alt="Curso 116">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/130.jpg" alt="Curso 117">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/130.jpg" alt="Curso 130">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/131.jpg" alt="Curso 131">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/4.jpg" alt="Curso 16">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/5.jpg" alt="Curso 17">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/136.jpg" alt="Curso 136">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/137.jpg" alt="Curso 137">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/138.jpg" alt="Curso 138">
+    </div>
+    <div class="gallery-item">
+      <img src="cursos/139.jpg" alt="Curso 139">
+    </div>
+
+  </div>
+</section>
+<!-- Seção Eventos -->
+<section id="eventos" class="gallery-section">
+    <h2>Eventos</h2>
+    <div class="gallery-container">
+
+        <!-- Lista de imagens da pasta eventos -->
+        <div class="gallery-item">
+            <img src="eventos/103.jpg" alt="Evento 1">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/104.jpg" alt="Evento 2">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/108.jpg" alt="Evento 3">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/109.jpg" alt="Evento 4">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/110.jpg" alt="Evento 5">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/111.jpg" alt="Evento 6">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/112.jpg" alt="Evento 7">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/113.jpg" alt="Evento 8">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/119.jpg" alt="Evento 9">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/120.jpg" alt="Evento 10">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/121.jpg" alt="Evento 11">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/122.jpg" alt="Evento 12">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/123.jpg" alt="Evento 13">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/124.jpg" alt="Evento 14">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/125.jpg" alt="Evento 15">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/126.jpg" alt="Evento 16">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/127.jpg" alt="Evento 17">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/128.jpg" alt="Evento 18">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/134.jpg" alt="Evento 19">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/135.jpg" alt="Evento 20">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/21.jpg" alt="Evento 21">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/22.jpg" alt="Evento 22">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/23.jpg" alt="Evento 23">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/24.jpg" alt="Evento 24">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/34.jpeg" alt="Evento 25">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/35.jpg" alt="Evento 26">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/60.jpg" alt="Evento 27">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/61.jpg" alt="Evento 28">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/79.jpg" alt="Evento 29">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/80.jpg" alt="Evento 30">
+        </div>
+        <div class="gallery-item">
+            <img src="eventos/81.jpg" alt="Evento 31">
+        </div>
+
+    </div>
+</section>
+<!-- Seção: Formados -->
+<section id="formados" class="gallery-section">
+    <h2>Formados</h2>
+    <div class="gallery-container">
+
+        <!-- Fotos dos formandos -->
+        <div class="gallery-item">
+            <img src="formandos/2.jpg" alt="Formado 1">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/13.jpg" alt="Formado 2">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/25.jpeg" alt="Formado 3">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/26.jpeg" alt="Formado 4">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/27.jpeg" alt="Formado 5">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/28.jpeg" alt="Formado 6">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/29.jpeg" alt="Formado 7">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/30.jpeg" alt="Formado 8">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/31.jpeg" alt="Formado 9">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/33.jpeg" alt="Formado 10">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/37.jpeg" alt="Formado 11">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/38.jpeg" alt="Formado 12">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/39.jpeg" alt="Formado 13">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/40.jpeg" alt="Formado 14">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/41.jpeg" alt="Formado 15">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/42.jpeg" alt="Formado 16">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/43.jpeg" alt="Formado 17">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/44.jpeg" alt="Formado 18">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/52.jpg" alt="Formado 19">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/54.jpg" alt="Formado 20">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/55.jpg" alt="Formado 21">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/56.jpg" alt="Formado 22">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/57.jpg" alt="Formado 23">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/58.jpg" alt="Formado 24">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/59.jpg" alt="Formado 25">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/63.jpg" alt="Formado 26">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/67.jpg" alt="Formado 27">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/68.jpg" alt="Formado 28">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/69.jpg" alt="Formado 29">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/70.jpg" alt="Formado 30">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/71.jpg" alt="Formado 31">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/72.jpg" alt="Formado 32">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/73.jpg" alt="Formado 33">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/74.jpg" alt="Formado 34">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/75.jpg" alt="Formado 35">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/76.jpg" alt="Formado 36">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/77.jpg" alt="Formado 37">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/85.jpg" alt="Formado 38">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/96.jpg" alt="Formado 39">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/107.jpg" alt="Formado 40">
+        </div>
+        <div class="gallery-item">
+            <img src="formandos/118.jpg" alt="Formado 41">
+        </div>
+
+    </div>
+</section>
+
+<footer class="rodape">
+    <p>© 2025 WR Assessoria</p>
+    <div class="redes-sociais">
+        <a href="[https://www.instagram.com/wrassessorias/](https://www.instagram.com/wrassessorias/)" target="_blank"><img src="imagens/icone-instagram.png" alt="Instagram"></a>
+        <a href="[https://www.facebook.com/walterlmm](https://www.facebook.com/walterlmm)" target="_blank"><img src="imagens/icone-facebook.png" alt="Facebook"></a>
+        <a href="[https://www.linkedin.com/in/wrassessoria/](https://www.linkedin.com/in/wrassessoria/)" target="_blank"><img src="imagens/icone-linkedin.png" alt="LinkedIn"></a>
+        <a href="[https://www.tiktok.com/@wrassessoria](https://www.tiktok.com/@wrassessoria)" target="_blank"><img src="imagens/icone-tiktok.png" alt="TikTok"></a>
+        <a href="[https://x.com/TreinamentoWr](https://x.com/TreinamentoWr)" target="_blank"><img src="imagens/icone-x.png" alt="X (Twitter)"></a>
+        <a href="[https://web.telegram.org/a/](https://web.telegram.org/a/)" target="_blank"><img src="imagens/icone-telegram.png" alt="Telegram"></a>
+        <a href="[https://www.youtube.com/@wrassessoriaetreinamento7580](https://www.youtube.com/@wrassessoriaetreinamento7580)" target="_blank"><img src="imagens/icone-youtube.png" alt="YouTube"></a>
+        <a href="mailto:contato@wrassessoria.com.br"><img src="imagens/icone-email.png" alt="Email"></a>
+        <a href="skype:live:.cid.e97010734d718459?chat"><img src="imagens/icone-skype.png" alt="Skype"></a>
+    </div>
+</footer>
