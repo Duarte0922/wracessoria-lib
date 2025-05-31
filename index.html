@@ -17,7 +17,7 @@
   <a href="galeria.html">Galeria</a> 
     <a href="https://olink.ai/wrassessorias">Blog</a>
     <a href="#guias">Emitir Guias</a> <!-- Corrigido aqui -->
-    <a href="#contato">Contato</a>
+    <a href="#contact">Contato</a>
 
   </nav>
 </header>
@@ -243,7 +243,7 @@
         <a href="mailto:contato@wrassessoria.com.br" target="_blank"><i class="fas fa-envelope"></i></a>
     </div>
 <!-- Informações da Empresa -->
-<div class="contact-info" style="max-width: 600px; margin: 0 auto 20px; text-align: left; line-height: 1.8;">
+<div class="contact" style="max-width: 600px; margin: 0 auto 20px; text-align: left; line-height: 1.8;">
     <p><strong>Telefones:</strong>
         <br>
         <span class="golden-text">31 35670963</span>,
@@ -297,7 +297,7 @@ function enviarParaWhatsApp(event) {
 
     // Monta a mensagem
     const texto = `Olá, sou da WR Assessoria!\n\n` +
-    `Recebemos um novo cadastro na Notícias e Atualizações de Dpto do site:\n` +
+                 `Recebemos um novo cadastro na Notícias e Atualizações de Dpto do site:\n` +
                   `Nome: ${name || 'Não informado'}\n` +
                   `E-mail: ${email || 'Não informado'}`;
 
@@ -316,24 +316,25 @@ document.getElementById("newsletter-form").addEventListener("submit", enviarPara
 </script>
 
 <!-- Campo de Contato -->
-<section class="contact-section" style="background-color: #1A202C; color: white; padding: 40px; text-align: center;">
-    <h2 style="margin-bottom: 20px;">Entre em Contato</h2>
+<section id="contact" class="contact-section" style="background-color: #1A202C; color: white; padding: 40px; text-align: center;">
+  <h2 style="margin-bottom: 20px;">Entre em Contato</h2>
 
-<div class="social-videos">
-  <a href="https://www.instagram.com/wrassessorias/" target="_blank">
-    <video autoplay loop muted playsinline class="background-video">
-      <source src="assets/instagram video.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos.
-    </video>
-  </a>
+  <div class="social-videos">
+    <a href="https://www.instagram.com/wrassessorias/" target="_blank">
+      <video autoplay loop muted playsinline class="background-video">
+        <source src="assets/instagram video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    </a>
 
-  <a href="https://api.whatsapp.com/send?1=pt_BR&phone=553135670963" target="_blank">
-    <video autoplay loop muted playsinline class="background-video">
-      <source src="assets/zap2.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos.
-    </video>
-  </a>
-</div>
+    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=553135670963" target="_blank">
+      <video autoplay loop muted playsinline class="background-video">
+        <source src="assets/zap2.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    </a>
+  </div>
+</section>
 
 
 <!-- Scripts (no final do body) -->
