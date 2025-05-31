@@ -4,10 +4,10 @@
   margin: 0;
   padding: 0;
 }
-
-/* Estilo base responsivo */
-html {
-  font-size: 16px;
+.background-video {
+    width: 11%; /* Ocupa 100% da largura do container pai */
+    height: 270px; /* Define a altura fixa */
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -15,7 +15,42 @@ html {
     font-size: 14px;
   }
 }
+/* Ajuste dos campos do formulário */
+#newsletter-form input[type="text"],
+#newsletter-form input[type="email"] {
+    padding: 14px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
 
+/* Botão CONFIRMAR */
+#newsletter-form button {
+    padding: 14px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+#newsletter-form button:hover {
+    background-color: #c69b2d;
+}
 /* Geral */
 body {
   margin: 0;
@@ -32,7 +67,139 @@ body {
   padding: 1rem 2rem;
   background-color: #4a4494;
 }
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Seção de Cabeçalho */
+.header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.name {
+    font-size: 36px;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Ícones de Redes Sociais */
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #d4af37;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* Formulário de Inscrição */
+.newsletter {
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.newsletter .container {
+    position: relative;
+    z-index: 2;
+}
+
+.message {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+/* Estilo para ícones de redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #d4af37; /* Cor dourada */
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+form button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #d4af37;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #c69b2d;
+}
 .menu {
   display: flex;
   gap: 1.5rem;
@@ -320,4 +487,35 @@ body {
   height: auto;
   margin: 1rem auto 0;
   display: block;
+}
+.social-videos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+/* Estilo para texto dourado */
+.golden-text {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* Ajusta o espaçamento entre os parágrafos */
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Se quiser aumentar o tamanho do texto */
+.contact-info p,
+.contact-info strong {
+    font-size: 1rem;
+}
+
+.social-videos video {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }

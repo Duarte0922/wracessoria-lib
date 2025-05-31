@@ -13,12 +13,12 @@
 <header class="navbar">
   <nav class="menu">
     <a href="#inicio">Início</a>
-    <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
-  <a href="galeria.html">Galeria</a> <a href="#blog">Blog</a>
-    <a href="#blog">Blog</a>
+  <a href="galeria.html">Galeria</a> 
+    <a href="https://olink.ai/wrassessorias">Blog</a>
     <a href="#guias">Emitir Guias</a> <!-- Corrigido aqui -->
     <a href="#contato">Contato</a>
+
   </nav>
 </header>
 
@@ -220,30 +220,145 @@
     </ul>
   </div>
     </section>
+<div class="post">
+      <img src="assets/empregabrasil.png" alt="Emprega Brasil">
+      <h3>Emprega Brasil</h3>
+      <a href="https://servicos.mte.gov.br/empregador/#/login" target="_blank">Acessar site</a>
+    </div>
+    <!-- Seção de Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <h1 class="name">WR ASSESSORIA</h1>
+            <p class="description">
+                Consultorias e Assessoria Online em Dpto. Pessoal | eSocial | DCTFWeb |
+                Reclamatória Trabalhista | Conectividade Social
+            </p>
+        </div>
+    </header>
 
-  <!-- Formulário de Newsletter -->
-  <section class="newsletter">
-    <h2>Receba nossos conteúdos</h2>
-    <form>
-      <input type="email" placeholder="Seu e-mail" required>
-      <button type="submit">Inscrever-se</button>
+    <!-- Ícones de Redes Sociais -->
+    <div class="social-icons">
+        <a href="https://wa.me/5531993616826"  target="_blank"><i class="assets\zap.png"></i></a>
+        <a href="https://www.instagram.com/wrassessorias/"  target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:contato@wrassessoria.com.br" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+<!-- Informações da Empresa -->
+<div class="contact-info" style="max-width: 600px; margin: 0 auto 20px; text-align: left; line-height: 1.8;">
+    <p><strong>Telefones:</strong>
+        <br>
+        <span class="golden-text">31 35670963</span>,
+        <br>
+        <span class="golden-text">31 99361 6826</span>,
+        <br>
+        <span class="golden-text">31 99160 3301</span>
+    </p>
+
+    <p><strong>Empresa:</strong> <span class="golden-text">WR Assessoria e Treinamentos</span></p>
+
+    <p><strong>Avaliação no Google:</strong> <span class="golden-text">4.6/5 (11 avaliações)</span></p>
+
+    <p><strong>Endereço:</strong> <span class="golden-text">R. Augusto Clementino, 817 - Santa Amélia, Belo Horizonte - MG, 31550-300</span></p>
+
+    <!-- Novo bloco Address centralizado abaixo -->
+    <p class="address-extra" style="margin-top: 30px;">
+        <strong>Address:</strong> 
+        <span class="golden-text">R. Augusto Clementino, 817 - Santa Amélia, Belo Horizonte - MG, 31550-300</span>
+    </p>
+    <p class="phone-extra" style="margin-top: 20px;">
+        <strong>Telefone:</strong> 
+        <span class="golden-text">(31) 99361-6826</span>
+    </p>
+</div>
+        </div>
+<div class="container">
+    <p class="message">
+        Receba Notícias e Atualizações de Dpto Pessoal (não se preocupe, somos contra o spam)
+    </p>
+
+    <!-- Formulário -->
+    <form id="newsletter-form">
+        <input type="text" id="nameInput" placeholder="Digite seu Nome*" required>
+        <input type="email" id="emailInput" placeholder="Digite seu Email*" required>
+        <button type="submit">CONFIRMAR</button>
     </form>
-  </section>
+</div>
+</section>
 
+<!-- Script para enviar via WhatsApp -->
+<script>
+function enviarParaWhatsApp(event) {
+    event.preventDefault(); // Evita o comportamento padrão do form
+
+    const name = document.getElementById("nameInput").value.trim();
+    const email = document.getElementById("emailInput").value.trim();
+
+    // Número do WhatsApp da WR Assessoria (com código do país)
+    const numeroWhatsApp = "553135670963"; // Substitua se necessário
+
+    // Monta a mensagem
+    const texto = `Olá, sou da WR Assessoria!\n\n` +
+    `Recebemos um novo cadastro na Notícias e Atualizações de Dpto do site:\n` +
+                  `Nome: ${name || 'Não informado'}\n` +
+                  `E-mail: ${email || 'Não informado'}`;
+
+    // Codifica a mensagem para funcionar na URL
+    const textoCodificado = encodeURIComponent(texto);
+
+    // Abre o WhatsApp com a mensagem pronta
+    window.open(`https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${textoCodificado}`, '_blank');
+
+    // Opcional: limpar campos após envio
+    document.getElementById("newsletter-form").reset();
+}
+
+// Adiciona o evento ao formulário
+document.getElementById("newsletter-form").addEventListener("submit", enviarParaWhatsApp);
+</script>
+
+<!-- Campo de Contato -->
+<section class="contact-section" style="background-color: #1A202C; color: white; padding: 40px; text-align: center;">
+    <h2 style="margin-bottom: 20px;">Entre em Contato</h2>
+
+<div class="social-videos">
+  <a href="https://www.instagram.com/wrassessorias/" target="_blank">
+    <video autoplay loop muted playsinline class="background-video">
+      <source src="assets/instagram video.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos.
+    </video>
+  </a>
+
+  <a href="https://api.whatsapp.com/send?1=pt_BR&phone=553135670963" target="_blank">
+    <video autoplay loop muted playsinline class="background-video">
+      <source src="assets/zap2.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos.
+    </video>
+  </a>
+</div>
+
+
+<!-- Scripts (no final do body) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
+<script src="lib/script.js"></script>
+
+
+<!-- Rodapé -->
 <footer class="rodape">
-  <p>&copy; 2025 WR Assessoria</p>
-  <div class="redes-sociais">
-    <a href="https://www.instagram.com/wrassessorias/" target="_blank"><img src="assets/icone-instagram.png" alt="Instagram"></a>
-    <a href="https://www.facebook.com/walterlmm" target="_blank"><img src="assets/icone-facebook.png" alt="Facebook"></a>
-    <a href="https://www.linkedin.com/in/wrassessoria/" target="_blank"><img src="assets/icone-linkedin.png" alt="LinkedIn"></a>
-    <a href="https://www.tiktok.com/@wrassessoria" target="_blank"><img src="assets/icone-tiktok.png" alt="TikTok"></a>
-    <a href="https://x.com/TreinamentoWr" target="_blank"><img src="assets/icone-x.png" alt="X (Twitter)"></a>
-    <a href="https://web.telegram.org/a/" target="_blank"><img src="assets/icone-telegram.png" alt="Telegram"></a>
-    <a href="https://www.youtube.com/@wrassessoriaetreinamento7580" target="_blank"><img src="assets/icone-youtube.png" alt="YouTube"></a>
+    <div class="redes-sociais">
+    <a href="https://www.instagram.com/wrassessorias/"  target="_blank"><img src="assets/icone-instagram.png" alt="Instagram"></a>
+    <a href="https://www.facebook.com/walterlmm"  target="_blank"><img src="assets/icone-facebook.png" alt="Facebook"></a>
+    <a href="https://www.linkedin.com/in/wrassessoria/"  target="_blank"><img src="assets/icone-linkedin.png" alt="LinkedIn"></a>
+    <a href="https://www.tiktok.com/@wrassessoria"  target="_blank"><img src="assets/icone-tiktok.png" alt="TikTok"></a>
+    <a href="https://x.com/TreinamentoWr"  target="_blank"><img src="assets/icone-x.png" alt="X (Twitter)"></a>
+    <a href="https://web.telegram.org/a/"  target="_blank"><img src="assets/icone-telegram.png" alt="Telegram"></a>
+    <a href="https://www.youtube.com/@wrassessoriaetreinamento7580"  target="_blank"><img src="assets/icone-youtube.png" alt="YouTube"></a>
     <a href="mailto:contato@wrassessoria.com.br"><img src="assets/icone-email.png" alt="Email"></a>
     <a href="skype:live:.cid.e97010734d718459?chat"><img src="assets/icone-skype.png" alt="Skype"></a>
   </div>
 </footer>
 
 <!-- Botão WhatsApp Flutuante -->
-<a href="https://api.whatsapp.com/send?1=pt_BR&phone=553135670963&text=Ol%C3%A1%20somos%20da%20WR%20Assessoria%20podemos%20te%20ajudar?" target="_blank" class="whatsapp-float">Fale conosco</a>
+<a href="https://api.whatsapp.com/send?1=pt_BR&phone=553135670963" target="_blank" class="whatsapp-float">Fale conosco</a>
+
+</body>
+</html>
